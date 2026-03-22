@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi</title>
+  <link rel="stylesheet" href="../project2/css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <img src="img.jpg/logo sekola.jpeg" alt="Logo">
+    <div>
+      <h3>MTS DARUL IHYA</h3>
+      <p>مَنْ جَدَّ وَجَدَ</p>
+    </div>
+  </div>
+
+<div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-menu">
+    <a href="profil.html">Profil</a>
+    <a href="index.html">Home</a>
+    <a href="program.html" >Program</a>
+    <a href="informasi.html"class="active">Informasi</a>
+    <a href="kontak.html">Kontak</a>
+    <a href="visi misi.html">Visi & Misi</a>
+  </nav>
+</header>
+
+<!-- HEADER PAGE -->
+<section class="page-header">
+  <div class="overlay"></div>
+  <h1>Informasi</h1>
+</section>
+
+<!-- PROGRAM -->
+<section class="program">
+  <div class="program-card">
+    <h3>Memperingati Maulid Nabi</h3>
+    <img src="img.jpg/maulid nabi.png" alt="Kegiatan Technology">
+  </div>
+
+  <div class="program-card">
+    <h3>Asesmen Sumatif Akhir Semester</h3>
+    <img src="img.jpg/sumatif akhir.png" alt="Kegiatan Tahfidz">
+  </div>
+
+  <div class="program-card" onclick="pindah2()">
+    <h3>Sumpah Pemuda 2025</h3>
+    <img src="img.jpg/sumpah pemuda.png" alt="Kegiatan Character">
+  </div>
+
+  <div class="program-card" onclick="pindah()">
+  <h3>Hari Guru 2025</h3>
+  <img src="img.jpg/hari guru.png" alt="kegiatan">
+</div>
+
+</section>
+
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-menu");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>
+
+
+<script>
+function pindah() {
+  window.location.href = "halaman/hari-guru.html";
+}
+function pindah2() {
+  window.location.href = "halaman/sumpah-pemuda.html";
+}
+</script>
+
+
+</body>
+</html>
